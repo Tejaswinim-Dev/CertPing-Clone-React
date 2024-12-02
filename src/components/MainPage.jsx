@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./navbar/Navbar";
 import Hero from "./hero/Hero";
 import CardMain from "./cards/CardMain";
@@ -9,7 +8,7 @@ import Solution from "./solution/Solution";
 import TestimonialMain from "./testimonial/testimonialmain/TestimonialMain";
 import Footer from "./footer/Footer";
 import Stats from "./stats-cards/Stats";
-import Performance from "./performance/performance";
+import Performance from "./performance/Performance";
 
 function MainPage(){
   return(

@@ -8,10 +8,7 @@ export function Performance() {
   const [url, setUrl] = useState('');
   const [response, setResponse] = useState(null);
 
-
-
   const apiEndpoint = `https://certping.com/api/check-website?url=${url}`;
-
 
   const getDetails = () => {
     axios.get(`${apiEndpoint}`)
@@ -344,25 +341,20 @@ export function Performance() {
       Self-Signed
     </span>
     <span className='blurred-text'>36</span>
+    </div>
   </div>
-</div>
 
-<div style={{backgroundColor:"black",color:"white",textAlign:"center",padding:"30px",borderRadius:"30px"}}>
+  <div style={{backgroundColor:"black",color:"white",textAlign:"center",padding:"30px",borderRadius:"30px"}}>
   <h3 style={{fontWeight:"bold",fontSize:"24px"}}>Unlock the Full Report and Stay Ahead.</h3>
   <p style={{fontSize:"16px",padding:"10px",width:"75%",marginLeft:"100px"}}>Get detailed insights, real-time downtime alerts, SSL expiration reminders, and seamless app integrations like Slack and more</p>
   <button style={{borderRadius:"20px",padding:"8px 24px",border:"none",fontSize:"14px"}}>Start For Free 
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right ml-2 h-4 w-4 m-1 me-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
   </button>
-</div>
+  </div>
             </div>
         
             )}
-     
-
-     
-
     </div>
-
   );
 }
 
