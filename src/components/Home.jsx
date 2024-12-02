@@ -10,7 +10,7 @@ import Footer from "./footer/Footer";
 import Stats from "./stats-cards/Stats";
 import Performance from "./performance/Performance";
 
-function MainPage(){
+function Home(){
   return(
     <div>
       <Navbar/>
@@ -28,4 +28,4 @@ function MainPage(){
   )
 }
 
-export default MainPage;
+export default Home;
