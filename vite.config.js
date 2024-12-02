@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['axios'],
+      external: ['axios'], // Treat axios as an external dependency
     },
   },
 })
