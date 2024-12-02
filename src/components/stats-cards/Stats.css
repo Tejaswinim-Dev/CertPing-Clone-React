@@ -1,0 +1,24 @@
+.stats-card1,.stats-card2,.stats-card3,.stats-card4{
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 16px;
+  height: 150px;
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.stats-card1 p,.stats-card2 p,.stats-card3 p,.stats-card4 p{
+  font-size: 14px;
+  text-align: start;
+  color: rgb(114,114,120);
+}
+.statscard-main{
+    font-size:18px;
+    font-weight:bold;
+    text-align:start
+}
+.statscard-count{
+  font-size:30px;
+  font-weight:bold;
+  text-align:start
+}

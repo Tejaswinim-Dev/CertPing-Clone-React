@@ -1,0 +1,86 @@
+.hero{
+    background-color: rgb(246,239,253);
+    width: 100%;
+    height:auto;
+    padding-top: 68px;
+    height: 1200px;
+    margin-bottom: 0px;
+ 
+}
+.hero-main h1{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 43px;
+}
+
+.hero-main span{
+    font-size: 70px;
+    padding: 0px;
+    font-weight:900;
+    
+}
+.hero-main p{
+    margin-left: auto;
+    margin-right:auto ;
+    font-size: 20px;
+    text-align: center;
+    width: 48rem;
+    color:rgb(114,114,123);
+}
+.gradient{
+    background: rgb(35,26,46);
+    background: linear-gradient(90deg, rgba(35,26,46,1) 0%, rgba(84,37,128,1) 50%, rgba(135,48,215,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.login{
+    background-color: black;
+    color: white;
+    width: 162.48px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 8px 24px;
+    border: 2px #000000;
+    font-size: 14px;
+    margin-left: 580px;
+    margin-top: 10px;
+
+}
+.login svg{
+    padding:2px ;
+}
+
+.demo{
+    background-color:white;
+    color: white;
+    width: 162.48px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 8px 24px;
+    border: 1px white;
+    color: black;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+.hero-img{
+    border: 10px solid rgb(143,131,161) ;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    
+
+}
+.hero-img img{
+    width: 1114px;
+    height: 100%;
+    border-radius: 0px;
+}
+

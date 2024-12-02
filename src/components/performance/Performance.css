@@ -1,0 +1,14 @@
+.performance-h2{
+    background: rgb(35,26,46);
+    background: linear-gradient(90deg, rgba(35,26,46,1) 30%, rgba(84,37,128,1) 50%, rgba(135,48,215,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.blurred-text {
+    display: inline-block;
+    filter: blur(4px);
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  
