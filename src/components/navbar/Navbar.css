@@ -71,4 +71,4 @@
 .nav-login button:hover {
     background-color: rgba(0, 0, 0, 1); /* Fully opaque on hover */
     transform: scale(1.05); /* Subtle scale effect */
-}
+} 

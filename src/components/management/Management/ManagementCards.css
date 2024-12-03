@@ -1,47 +1,66 @@
-.cards{
-    height: 150px;
-   width: 300px;
-   border: 1px solid rgb(217, 212, 212);
-   text-align: center;
-   border-radius: 10px;
-   padding: 10px;
-   margin-top:20px;
-   display: flex;
+.cards {
+  height: 150px;
+  width: 300px;
+  border: 1px solid rgb(217, 212, 212);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+}
 
+.cards img {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
 
-   
- }
- .cards img{
-background-color:rgba(0,0,0,0.1);
- width: 48px;
- height: 48px;
- padding: 10px;
- border-radius: 50%;
- margin: 10px;
+.cards-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  align-content: center;
+}
 
- }
- .cards-content{
-   display:flex;
-   flex-direction:column ;
-   text-align:start;
-   justify-content:center;
-   align-content:center
- }
- .cards img:hover{
-   transform:scale(1.0101) ;
-   background-color: rgba(0,0,0,0.4);
+.cards img:hover {
+  transform: scale(1.0101);
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
- }
+.cards h5 {
+  font-weight: bold;
+  margin-top: 8px;
+}
 
- .cards h5{
-    font-weight: bold;
-    margin-top: 8px;
- }
- .cards p{
-    width: 75%;
-    color:rgb(114,114,123);
-    font-weight: 14px;
- }
- .cards p:hover{
-   color: black;
- }
+.cards p {
+  width: 75%;
+  color: rgb(114, 114, 123);
+  font-size: 14px;
+}
+
+.cards p:hover {
+  color: black;
+}
+
+/* Responsiveness for screens below 628px */
+@media screen and (max-width: 628px) {
+  .cards {
+    width: 95%; /* Make cards span full width of the container */
+    margin: 10px auto; /* Center cards with auto margin */
+  }
+
+  .cards img {
+    margin-top: 35px;
+    width: 40px; /* Slightly increase icon size for small screens */
+    height: 40px;
+  }
+
+  .cards p {
+    width: 100%; /* Ensure text spans full width for better readability */
+    text-align: center; /* Center-align text for consistency */
+  }
+}

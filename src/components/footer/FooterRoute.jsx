@@ -15,9 +15,9 @@ function FooterRoute() {
             </div>
             <div className='footer-22'>
               <h3>Quick Links</h3>
-              <a href="#support">Support</a><br />
-              <a href="#pricing">Pricing</a><br />
-              <a href="#check">Check your Website</a>
+              <a href="/#support">Support</a><br />
+              <a href="/#pricing">Pricing</a><br />
+              <a href="/#check">Check your Website</a>
             </div>
             <div className='footer-23'>
               <h3>Legal</h3>

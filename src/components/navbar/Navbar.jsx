@@ -13,9 +13,9 @@ function Navbar() {
 
       <div className="nav-links">
         <Link to={'/whySsl'}>Why CertPing?</Link>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#check">Check your Website</a>
+        <a href="/#features">Features</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#check">Check your Website</a>
       </div>
 
       <div className="nav-login">

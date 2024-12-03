@@ -1,0 +1,136 @@
+/* Container to wrap all stats cards */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;  /* Adding a gap between cards */
+  margin-top: 60px;  /* Space above the cards */
+  padding: 0 20px;  /* Padding to ensure cards are not touching edges */
+}
+
+/* Base styles for each card */
+.stats-card1, .stats-card2, .stats-card3, .stats-card4 {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative; /* Allow positioning of SVG */
+}
+
+/* Flexbox layout to push SVG to the end of the card */
+.statscard-main {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  justify-content: space-between; /* Align text and icon to the edges */
+  align-items: center; /* Vertically center content */
+}
+.statsmain-h2 ,.statsmain-h2 p,.statsmain-span{
+  font-size: 3rem;
+  font-weight:bold ;
+}
+
+.statsmain-span{
+  color: rgb(66,33,98);
+}
+.statscard-count {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.stats-card1 p, .stats-card2 p, .stats-card3 p, .stats-card4 p {
+  font-size: 14px;
+  text-align: start;
+  color: rgb(114, 114, 120);
+}
+
+/* For larger screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .stats-card1, .stats-card2, .stats-card3, .stats-card4 {
+    width: 22%; /* 4 cards per row */
+  }
+}
+
+/* For tablets (max-width: 1024px and min-width: 768px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .stats-card1, .stats-card2, .stats-card3, .stats-card4 {
+    width: 48%; /* 2 cards per row */
+  }
+  .statsmain-h2 {
+    font-size: 1.8rem !important; /* Force font size to 1rem for small screens */
+    font-weight: bold;/* Force title to be in one line */
+    text-align: center;
+    width:100%; /* Center the text */
+    margin: 0; /* Remove extra margin */
+  }
+
+  /* Adjust the font size and alignment of the span element */
+  .statsmain-span {
+    font-size: 1.8rem !important; /* Force font size to 1rem for small screens */
+    width: 100%;
+    font-weight: bold; /* Ensure this is on a new line */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Optional: Add margin to separate it from the title */
+  }
+
+  /* Adjust the <p> tag inside h2 */
+  .statsmain-h2 p {
+    font-size: 1.8rem !important; /* Adjust font size of <p> inside h2 */
+    margin: 10px 0;
+    font-weight: bold; /* Optional: Add margin between lines */
+  }
+
+}
+
+/* For mobile screens (max-width: 767px) */
+/* For small screens (max-width 767px) */
+@media (max-width: 767px) {
+  /* Ensure cards take full width (1 card per row) */
+  .stats-card1, .stats-card2, .stats-card3, .stats-card4 {
+    width: 100%; /* 1 card per row */
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 20px; /* Optional: Add space between cards */
+  }
+
+  /* Adjust the font size of the title */
+  .statsmain-h2 {
+    font-size: 1.8rem !important; /* Force font size to 1rem for small screens */
+    font-weight: bold;/* Force title to be in one line */
+    text-align: center;
+    width:100%; /* Center the text */
+    margin: 0; /* Remove extra margin */
+  }
+
+  /* Adjust the font size and alignment of the span element */
+  .statsmain-span {
+    font-size: 1.8rem !important; /* Force font size to 1rem for small screens */
+    width: 100%;
+    font-weight: bold; /* Ensure this is on a new line */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Optional: Add margin to separate it from the title */
+  }
+
+  /* Adjust the <p> tag inside h2 */
+  .statsmain-h2 p {
+    font-size: 1.8rem !important; /* Adjust font size of <p> inside h2 */
+    margin: 10px 0;
+    font-weight: bold; /* Optional: Add margin between lines */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

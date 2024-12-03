@@ -1,34 +1,110 @@
-.card{
-    height: 220px;
-   width: 400px;
-   border: 1px solid rgb(217, 212, 212);
-   text-align: center;
-   border-radius: 10px;
-   padding: 10px;
-   margin-top:20px;
-   margin: 15px;
+/* General card styles */
+.card {
+  height: 220px;
+  width: 100%; /* Make the card width flexible */
+  max-width: 400px; /* Set a max-width to limit the size */
+  border: 1px solid rgb(217, 212, 212);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin: 15px;
+}
+
+.card img {
+  background-color: rgb(233, 214, 251);
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.card h5 {
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card p {
+  width: 75%;
+  color: rgb(114, 114, 123);
+  font-weight: 14px;
+  margin: 5px;
+}
+
+/* Grid Layout */
+.cards-list {
+  display: grid;
+  gap: 20px; /* Adding spacing between the cards */
+  padding: 30px;
+  margin: 20px;
+}
+
+/* For screens smaller than 768px (mobile) */
+@media screen and (max-width: 768px) {
+  .cards-list {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .card img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card h5 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+    width: 90%; /* Adjust text width */
+  }
+}
+
+/* For screens between 768px and 1028px (tablet) */
+@media screen and (min-width: 769px) and (max-width: 1028px) {
+  .cards-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card h5 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+    width: 85%; /* Adjust text width */
+  }
+}
+
+/* For screens above 1028px (large screens) */
+@media screen and (min-width: 1029px) {
+  .cards-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+
+  .card img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .card h5 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+    width: 75%; /* Adjust text width */
+  }
+}
 
 
-   
- }
- .card img{
-background-color:rgb(233,214,251);
- width: 48px;
- height: 48px;
- padding: 10px;
- border-radius: 50%;
- margin: 10px;
-
- }
-
- .card h5{
-    font-weight: bold;
-    margin: 5px;
-    padding: 5px;
- }
- .card p{
-    width: 75%;
-    color:rgb(114,114,123);
-    font-weight: 14px;
-    margin: 5px;
- }
+ 
+ 
+ 

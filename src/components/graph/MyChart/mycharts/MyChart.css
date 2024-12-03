@@ -1,0 +1,24 @@
+/* For screens smaller than 768px (mobile) */
+@media screen and (max-width: 768px) {
+    #myChart {
+      width: 350px !important;
+      height: 300px !important;
+      margin: 10px auto;
+    }
+  }
+  
+  /* For screens between 768px and 1028px (tablet) */
+  @media screen and (min-width: 769px) and (max-width: 1028px) {
+    #myChart {
+      width: 350px !important;
+      height: 300px !important;
+      margin: 10px auto;
+    }
+  }
+  
+  /* For screens above 1028px (large screens) */
+  @media screen and (min-width: 1029px) {
+    /* You can add specific styles for larger screens here if needed */
+  }
+  
+  

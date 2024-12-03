@@ -9,6 +9,7 @@ import {
     Legend,
     BarController,
 } from 'chart.js'; 
+import './MyChart.css'
 
 const MyChart = () => {
     const chartRef = useRef(null);

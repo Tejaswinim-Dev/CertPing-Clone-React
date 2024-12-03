@@ -23,14 +23,7 @@ function Cards(props) {
 
 function CardsList() {
   return (
-    <div style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(3, 1fr)", 
-      gridAutoRows: "auto",
-      padding:"30px",
-      margin:"20px",
-
-    }} >
+    <div className="cards-list" >
       <Cards img={Notification} h5="Instant Notifications" p="Get alerted immediately when your SSL certificate becomes invalid or website issues are detected." />
       <Cards img={Api} h5="Full Featured API" p="Add websites, get statistics, and receive webhooks for seamless integration." />    
       <Cards img={Checks} h5="Lightning Fast Checks" p="Rapid SSL and website health checks every 10 seconds for unparalleled reliability." />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import MyChart from './MyChart';
-import PerformanceGraph from './PerformanceChart';
+import MyChart from './mycharts/MyChart';
+import PerformanceGraph from './performancecharts/PerformanceChart';
 
 const AlternateCharts = () => {
   const [showMyChart, setShowMyChart] = useState(true);

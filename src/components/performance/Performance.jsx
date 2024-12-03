@@ -24,12 +24,12 @@ export function Performance() {
   
 
   return(
-    <div style={{ textAlign: 'center', padding: '100px',width:"80%",margin:"10px auto"}} id="check">
+    <div  className='performance-main' style={{ textAlign: 'center', padding: '100px',width:"80%",margin:"10px auto"}}>
       <h2  className="performance-h2" style={{fontWeight:"bold",fontSize:"48px"}}>Check your Website Performance</h2>
       <p style={{color:"rgb(114,114,120)",width:"60%",margin:"20px auto"}}>Stay worry-free with the simplest monitoring service ever. Get instant alerts when your site goes down or your SSL certificate expires. No fuss, just peace of mind</p>
       <div style={{border:"2px solid rgba(0,0,0,0.2)",borderRadius:"30px" ,margin:" 10px auto",padding:"10px",width:"95%",display:"flex",justifyContent:"space-between",alignItems:"center",height:"70px"}}>
         <div style={{margin:"2px"}}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search absolute left-4 top-1/2 transform -translate-y-1/2 text-primary/60 h-6 w-6 m-2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search absolute left-4 top-1/2 transform -translate-y-1/2 text-primary/60 h-6 w-6 m-1"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
       <input
         type="text"
         onKeyDown={(e)=>{if(e.key==="Enter"){
@@ -38,7 +38,7 @@ export function Performance() {
         placeholder="https://example.com"
         value={url}
         onChange={(e) => setUrl(e.target.value)} 
-        style={{border:"none",margin:"5px",textDecoration:"none",width:"710px",outline:"none"}}
+        style={{border:"none",margin:"5px",textDecoration:"none",width:"80%",outline:"none"}}
         // Update the state as the user types
       />
       </div>
@@ -359,8 +359,3 @@ export function Performance() {
 }
 
 export default Performance;
-
-
-
-
-

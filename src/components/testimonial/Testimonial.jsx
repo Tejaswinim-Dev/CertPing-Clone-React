@@ -39,7 +39,7 @@ const Testimonials = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 700,
+        speed: 900,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
@@ -63,8 +63,9 @@ const Testimonials = () => {
     };
 
     return (
+        <div>
         <div className="marquee-container">
-            <div className="marquee">
+            <div className="marquee-1">
                 {testimonials.map((testimonial, index) => (
                     
                     <div key={index} className="testimonial-card">
@@ -106,6 +107,50 @@ const Testimonials = () => {
                     </div>
                 ))}
             </div>
+            <div className="marquee-2" style={{marginTop:"30px"}}>
+                {testimonials.map((testimonial, index) => (
+                    
+                    <div key={index} className="testimonial-card">
+                         <p className="feedback">“{testimonial.feedback}”</p>
+                        <div style={{display:"flex",width:"100%",justifyContent:"space-between",alignItems:"center"}}>
+                        <div style={{display:"flex"}}>
+                            <img  className="testimonial-img" src={testimonial.image} alt="" />
+                            <div style={{display:"flex",flexDirection:"column",marginLeft:"10px",justifyContent:"center"}}>
+                                <h3 className="names">{testimonial.name}</h3>
+                                <p className="role">{testimonial.role}</p>
+                            </div>
+                            </div>
+                            
+                           <div>
+                           <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-quote h-6 w-6 text-grey opacity-50 flex-shrink-0 group-hover:scale-110 transition-transform duration-300"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></span>
+                           </div>
+                        </div>
+                       
+                    </div>
+                ))}
+                {/* Duplicate testimonials to ensure continuous scrolling */}
+                {testimonials.map((testimonial, index) => (
+                    <div key={`duplicate-${index}`} className="testimonial-card">
+                        <p className="feedback">“{testimonial.feedback}”</p>
+                        <div style={{display:"flex",width:"100%",justifyContent:"space-between"}}>
+                            <div style={{display:"flex"}}>
+                            <p className="initials">{testimonial.initials}</p>
+                           
+                            <div style={{display:"flex",flexDirection:"column",marginLeft:"10px",justifyContent:"center"}}>
+                                <h3 className="names">{testimonial.name}</h3>
+                                <p className="role">{testimonial.role}</p>
+                            </div>
+                            </div>
+                           <div>
+                           <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-quote h-6 w-6 text-grey opacity-50 flex-shrink-0 group-hover:scale-110 transition-transform duration-300"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></span>
+                           </div>
+                        </div>
+                        
+                    </div>
+                ))}
+            </div>
+            <div className="white-gradient" style={{height:'390px',position:'relative',bottom:'380px',zIndex:'2'}}></div>
+        </div>
         </div>
     );
 };

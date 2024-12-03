@@ -1,0 +1,59 @@
+/* Container styling */
+.cardmain-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading styling */
+  .cardmain-h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Paragraph styling */
+  .cardmain-p {
+    font-size: 20px;
+    width: 672px;
+    color: rgb(114, 114, 123);
+    text-align: center;
+  }
+  
+  /* For screens smaller than 768px (mobile) */
+  @media screen and (max-width: 768px) {
+    .cardmain-h2 {
+      font-size: 36px;
+    }
+  
+    .cardmain-p {
+      font-size: 16px;
+      width: 90%; /* Adjust width of paragraph */
+    }
+  }
+  
+  /* For screens between 768px and 1028px (tablet) */
+  @media screen and (min-width: 769px) and (max-width: 1028px) {
+    .cardmain-h2 {
+      font-size: 36px;
+    }
+  
+    .cardmain-p {
+      font-size: 18px;
+      width: 85%;
+    }
+  }
+  
+  /* For screens above 1028px (large screens) */
+  @media screen and (min-width: 1029px) {
+    .cardmain-h2 {
+      font-size: 48px;
+    }
+  
+    .cardmain-p {
+      font-size: 20px;
+      width: 672px;
+    }
+  }
+  

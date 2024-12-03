@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Solution() {
   return (
@@ -35,13 +36,13 @@ function Solution() {
         Scehduled Planned outages and more..
         </span>
       </div>
-      <button style={{backgroundColor: "black",
+    <Link to={'/signup'}><button style={{backgroundColor: "black",
     color: "white",
-    width: "120px",
+    width: "200px",
     height: "40px",
     borderRadius: "20px",
     marginLeft: "30px",
-    fontSize: "14px"}}>Contact Sales</button>
+    fontSize: "14px"}}>Contact Sales</button></Link>
     </div>
   )
 }

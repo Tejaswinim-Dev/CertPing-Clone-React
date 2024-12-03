@@ -8,7 +8,7 @@ function Footer() {
        <div className='footer-1'>
           <h2 style={{fontSize:"48px",fontWeight:"bold"}}>Ready to Elevate Your <span style={{color:"#9333EA"}}>Website Reliability?</span></h2>
           <p style={{fontSize:"18px",color:"#CECECF",width:"60%",margin:"5px auto"}}>Join thousands of websites that trust CertPing for comprehensive SSL and website monitoring. Start your journey to unparalleled uptime today.</p>
-          <Link to={'/signup'}><button>Start Your Free Trial</button></Link>
+          <Link to={'/signup'}><button style={{marginRight:"10px"}}>Start Your Free Trial</button></Link>
           <button>Schedule a Demo</button>
        </div>
        <div className='footer-2'>
@@ -23,9 +23,9 @@ function Footer() {
             </div>
             <div className='footer-22'>
               <h3>Quick Links</h3>
-              <a href="">Support</a><br />
-              <a href="">Pricing</a><br />
-              <a href="">Check your Website</a>
+              <a href="#support">Support</a><br />
+              <a href="/#pricing">Pricing</a><br />
+              <a href="/#check">Check your Website</a>
             </div>
             <div className='footer-23'>
               <h3>Legal</h3>

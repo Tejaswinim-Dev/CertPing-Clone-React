@@ -5,7 +5,7 @@ function MainPricing() {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
-    <div id="pricing">
+    <div>
       <h1 style={{ textAlign: 'center', fontSize: '48px', fontWeight: 'bold' }}>
         Simple, Transparent Pricing
       </h1>
@@ -18,7 +18,7 @@ function MainPricing() {
         <button
           onClick={() => setIsYearly(false)}
           style={{
-            padding: '6px 10px',
+            padding: '10px 10px',
             backgroundColor: isYearly ? '#f0f0f0' : 'black',
             color: isYearly ? '#000' : 'white',
             border: 'none',
@@ -33,7 +33,7 @@ function MainPricing() {
         <button
           onClick={() => setIsYearly(true)}
           style={{
-            padding: '6px 10px',
+            padding: '10px 10px',
             backgroundColor: isYearly ? 'black' : '#f0f0f0',
             color: isYearly ? '#fff' : '#000',
             border: 'none',

@@ -3,11 +3,19 @@
 .marquee-container {
   overflow: hidden;
   width: 100%;
-  background: #f9f9f9;
+  background: white;
   padding: 20px 0;
+  height: 500px;
 }
 
-.marquee {
+.marquee-1 {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+.marquee-2 {
   display: flex;
   gap: 20px;
   animation: scroll 20s linear infinite;
@@ -79,6 +87,15 @@
   transform: scale(1.02);
   
 }
-.marquee-container:hover .marquee {
+.marquee-container:hover .marquee-1 {
   animation-play-state: paused;
 }
+.marquee-container:hover .marquee-2 {
+  animation-play-state: paused;
+}
+
+.white-gradient{
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%);
+}
+  

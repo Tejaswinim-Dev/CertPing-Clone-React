@@ -24,8 +24,9 @@ function ManagementCardsList() {
   return (
     <div style={{
       display: "grid",
-      gridTemplateColumns: "repeat(2, 1fr)", 
-      gridAutoRows: "auto",
+      gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", // Dynamic grid based on screen width
+      gap: "20px", // Add space between cards
+      margin:"20px"
   
 
     }}>
