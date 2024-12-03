@@ -1,7 +1,10 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Step-1 (npm i)
 
+#Step-2 (npm run dev)
+
+---------------------------------------------------
 #Screenshot -1
 
 ![Alt Text](src/assets/screenshots/1.png)
