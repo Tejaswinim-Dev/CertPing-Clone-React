@@ -6,7 +6,7 @@ function Navbar() {
     <div className="nav">
       <div className="nav-logo">
         <Link to={'/'}>
-            <img src="https://certping.com/logo.svg" alt="" height="28px" width="28px"/>
+            <img src="https://www.certping.com/logo.svg" alt="" height="28px" width="28px"/>
             <span>CertPing</span>
         </Link>
       </div>

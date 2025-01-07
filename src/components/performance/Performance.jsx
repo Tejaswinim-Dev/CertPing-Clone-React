@@ -8,7 +8,7 @@ export function Performance() {
   const [url, setUrl] = useState('');
   const [response, setResponse] = useState(null);
 
-  const apiEndpoint = `https://certping.com/api/check-website?url=${url}`;
+  const apiEndpoint = `https://www.certping.com/api/check-website?url=${url}`;
 
   const getDetails = () => {
     axios.get(`${apiEndpoint}`)

@@ -24,10 +24,9 @@ function ManagementCardsList() {
   return (
     <div style={{
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", // Dynamic grid based on screen width
+      gridTemplateColumns: "repeat(auto-fit, minmax(250px, 2fr))", // Dynamic grid based on screen width
       gap: "20px", // Add space between cards
       margin:"20px"
-  
 
     }}>
       <ManagementCards img={Stack} h5="Unified Dashboard" p="Manage all your websites from a single, intuitive interface." />

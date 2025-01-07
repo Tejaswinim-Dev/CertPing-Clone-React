@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Hero.css";
 import { Link } from 'react-router-dom';
+import HeroImg from '../../assets/Hero/certping_hero.webp'
 
 function Hero({ isMenuOpen }) {
     return (
@@ -28,7 +29,7 @@ function Hero({ isMenuOpen }) {
                 </svg>
             </button>
             <div className='hero-img'>
-                <img src="https://certping.com/_next/image?url=%2Fcertping_hero.png&w=1920&q=75" alt="" />
+                <img src={HeroImg} alt="" />
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Management.css';
 import ManagementCardsList from './Management/ManagementCards';
+import Certping from '../../assets/Hero/certping_dash_2.webp'
 
 function Management() {
   return (
@@ -14,7 +15,7 @@ function Management() {
         </div>
       </div>
       <div className='management-image'>
-       <img src="https://certping.com/_next/image?url=%2Fcertping_dash.png&w=1920&q=75" alt="" />
+       <img src={Certping} alt="" />
        <p>Our intuitive dashboard provides both overview and detailed insights into your website's performance and security.</p>
       </div>
     </div>

@@ -6,7 +6,7 @@ function FooterRoute() {
       <div className='footer-2' >
             <div className='footer-21'>
               <div style={{display:"flex",alignItems:"center"}}>
-                <img src="https://certping.com/logo.svg" alt="" height="48" width="48" style={{margin:"5px",border:"none"}}/>
+                <img src="https://www.certping.com/logo.svg" alt="" height="48" width="48" style={{margin:"5px",border:"none"}}/>
                 <span style={{fontWeight:"bold",fontSize:"18px",paddingLeft:"5px"}}> CertPing</span>
               </div>
               <div>

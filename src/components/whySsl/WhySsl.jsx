@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../navbar/Navbar";
 import FooterRoute from "../footer/FooterRoute";
+import Ssl from '../../assets/Hero/http_video.mp4';
+import Sslstriping from '../../assets/Hero/ssl-striping.mp4';
+
 
 const liStyle = {
     padding: '5px 0px'
@@ -121,7 +124,7 @@ export function WhySsl() {
                     loop
                     className="rounded-lg mb-4 w-full"
                 >
-                    <source src="https://certping.com/animations-ssl/http-https.mp4" type="video/mp4" />
+                    <source src={Ssl} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -217,7 +220,7 @@ export function WhySsl() {
                     loop
                     className="rounded-lg mb-4 w-full"
                 >
-                    <source src="https://certping.com/animations-ssl/ssl-striping.mp4" type="video/mp4" />
+                    <source src={Sslstriping} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
