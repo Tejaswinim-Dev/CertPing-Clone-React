@@ -8,7 +8,7 @@ import Solution from "./solution/Solution";
 import TestimonialMain from "./testimonial/testimonialmain/TestimonialMain";
 import Footer from "./footer/Footer";
 import Stats from "./monitor-cards/Stats";
-import Performance from "./performance/performance";
+import Performance from "./performance/Performance";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import 'normalize.css';
