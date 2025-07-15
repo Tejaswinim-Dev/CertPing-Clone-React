@@ -3,6 +3,7 @@
 #Step-1 (npm i)
 
 #Step-2 (npm run dev)
+
 Important Note:
 Add CORS Unblock Extension and enable when searching a domain and trigger Search button to get your details.
 
